@@ -1,25 +1,27 @@
 # Gabriel Benicio | Backend Developer Portfolio
 
+Bem-vindo ao meu portfólio pessoal! Este projeto é um site responsivo e moderno projetado para mostrar minhas habilidades, experiência, projetos e certificações como Desenvolvedor Backend especializado em Java e Python.
+
 Welcome to my personal portfolio! This project is a responsive and modern website designed to showcase my skills, experience, projects, and certifications as a Backend Developer specializing in Java and Python.
 
-## 🌟 Features
+## 🌟 Features | Funcionalidades
 
-- **Responsive Design**: Optimized for seamless viewing across desktop, tablet, and mobile devices.
-- **Dynamic Navigation**: Smooth scrolling and active link highlighting for better user experience.
-- **Projects Showcase**: Detailed project descriptions, technologies used, and links to repositories or live demos.
-- **Contact Form**: Fully functional form to send messages directly to me.
-- **Certifications**: A dedicated section to highlight my professional achievements.
-- **TailwindCSS Styling**: Clean and modern design powered by TailwindCSS.
+- **Responsive Design | Design Responsivo**: Otimizado para visualização perfeita em dispositivos desktop, tablet e mobile.
+- **Dynamic Navigation | Navegação Dinâmica**: Rolagem suave e destaque de links ativos para uma melhor experiência do usuário.
+- **Projects Showcase | Exibição de Projetos**: Descrições detalhadas dos projetos, tecnologias utilizadas e links para repositórios ou demos ao vivo.
+- **Contact Form | Formulário de Contato**: Formulário totalmente funcional para enviar mensagens diretamente para mim.
+- **Certifications | Certificações**: Uma seção dedicada para destacar minhas conquistas profissionais.
+- **TailwindCSS Styling | Estilo com TailwindCSS**: Design limpo e moderno impulsionado pelo TailwindCSS.
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies Used | Tecnologias Utilizadas
 
-- **HTML5**: Semantic and accessible markup for better structure.
-- **CSS3**: Custom styles and animations for an engaging interface.
-- **JavaScript**: Adds interactivity and dynamic behavior to the site.
-- **TailwindCSS**: Utility-first CSS framework for rapid and consistent styling.
-- **Font Awesome**: Icons to enhance visual appeal and usability.
+- **HTML5**: Marcação semântica e acessível para melhor estrutura.
+- **CSS3**: Estilos e animações personalizados para uma interface envolvente.
+- **JavaScript**: Adiciona interatividade e comportamento dinâmico ao site.
+- **TailwindCSS**: Framework CSS orientado a utilitários para estilização rápida e consistente.
+- **Font Awesome**: Ícones para melhorar o apelo visual e a usabilidade.
 
-## 📂 Project Structure
+## 📂 Project Structure | Estrutura do Projeto
 
 ```
 ├── index.html
