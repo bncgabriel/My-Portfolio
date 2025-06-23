@@ -1,0 +1,419 @@
+<body class="bg-gray-50"></body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabriel Benicio | Desenvolvedor Backend</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-gray-50">
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Gabriel Benicio</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link active text-gray-800 font-medium">Início</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-gray-800 font-medium">Sobre</a>
+                <a href="#experience" class="nav-link text-gray-600 hover:text-gray-800 font-medium">Experiência</a>
+                <a href="#projects" class="nav-link text-gray-600 hover:text-gray-800 font-medium">Projetos</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-gray-800 font-medium">Contato</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#home" class="py-2 text-gray-800 font-medium border-b border-gray-100">Início</a>
+                <a href="#about" class="py-2 text-gray-600 hover:text-gray-800 font-medium border-b border-gray-100">Sobre</a>
+                <a href="#experience" class="py-2 text-gray-600 hover:text-gray-800 font-medium border-b border-gray-100">Experiência</a>
+                <a href="#projects" class="py-2 text-gray-600 hover:text-gray-800 font-medium border-b border-gray-100">Projetos</a>
+                <a href="#contact" class="py-2 text-gray-600 hover:text-gray-800 font-medium">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-green-50 to-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Olá, eu sou <span class="gradient-text">Gabriel Benicio</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">Desenvolvedor Backend Java/Python</h2>
+                    <p class="text-gray-600 mb-8 max-w-lg">Especializado em desenvolvimento de APIs REST com Spring Boot e FastAPI, com experiência em PostgreSQL, Docker e metodologias ágeis.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="gradient-bg text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">Contate-me</a>
+                        <a href="#projects" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Ver Projetos</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
+                            <div class="w-60 h-60 md:w-72 md:h-72 bg-white rounded-full overflow-hidden border-4 border-white shadow-xl">
+                                <img src="./assets/img/profile.jpg" alt="Gabriel Benicio" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-white p-3 rounded-full shadow-lg">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-code text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Sobre <span class="gradient-text">Mim</span></h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="relative">
+                        <div class="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
+                            <div class="w-44 h-44 md:w-60 md:h-60 bg-white rounded-full overflow-hidden border-4 border-white shadow-lg">
+                                <img src="./assets/img/profile.jpg" alt="Gabriel Benicio" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Desenvolvedor Backend Java/Python</h3>
+                    <p class="text-gray-600 mb-6">Sou um desenvolvedor backend apaixonado por criar soluções robustas e escaláveis usando Java e Python. Minha especialização está no desenvolvimento de APIs REST com Spring Boot e FastAPI, com forte conhecimento em bancos de dados PostgreSQL e práticas de DevOps.</p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Informações Pessoais</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-green-500 mr-3"></i>
+                                <span class="text-gray-600">gabrielbenicioo@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-blue-500 mr-3"></i>
+                                <span class="text-gray-600">+55 (83) 99662-9399</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-green-500 mr-3"></i>
+                                <span class="text-gray-600">João Pessoa, Paraíba, Brasil</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-globe text-blue-500 mr-3"></i>
+                                <span class="text-gray-600">Disponível para trabalho remoto</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/gabriel-benicioo" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition flex items-center">
+                            <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/bncgabriel" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition flex items-center">
+                            <i class="fab fa-github mr-2"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold text-center text-gray-800 mb-8">Minhas <span class="gradient-text">Habilidades</span></h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fab fa-java text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">Java</span>
+                    </div>
+                    <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-leaf text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">Spring Boot</span>
+                    </div>
+                    <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fab fa-python text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">Python</span>
+                    </div>
+                    <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-bolt text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">FastAPI</span>
+                    </div>
+                    <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-database text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">PostgreSQL</span>
+                    </div>
+                    <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fab fa-docker text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Minha <span class="gradient-text">Jornada</span></h2>
+            
+            <div class="max-w-3xl mx-auto">
+
+                <div class="mb-12">
+                    <div class="flex items-start">
+                        <div class="experiences">
+                            <i class="fas fa-laptop-code text-green-500 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800">Estagiário de Infraestrutura e Redes</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
+                                <span class="font-medium">Vox Tecnologia</span>
+                                <span class="hidden sm:block sm:mx-2">•</span>
+                                <span>Fevereiro 2025 - Presente</span>
+                            </div>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Containerização de microsserviços com Docker</li>
+                                <li>Monitoramento de performance de APIs usando ferramentas de log</li>
+                                <li>Automação de deploy em servidores Linux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-12">
+                    <div class="flex items-start">
+                        <div class="experiences">
+                            <i class="fas fa-database text-blue-500 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800">Monitor de Banco de Dados</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
+                                <span class="font-medium">LATIM - UNIESP</span>
+                                <span class="hidden sm:block sm:mx-2">•</span>
+                                <span>Abril 2024 - Dezembro 2024</span>
+                            </div>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Ministrei treinamentos práticos de SQL avançado (CTEs, JOINs complexos)</li>
+                                <li>Otimizei consultas com técnicas de indexação em PostgreSQL</li>
+                                <li>Documentei processos de integração entre bancos e APIs REST</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-center text-gray-800 mb-8">Formação <span class="gradient-text">Acadêmica</span></h3>
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="experiences">
+                            <i class="fas fa-graduation-cap text-green-500 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold text-gray-800">Tecnólogo em Sistemas para Internet</h4>
+                            <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
+                                <span class="font-medium">UNIESP Centro Universitário</span>
+                                <span class="hidden sm:block sm:mx-2">•</span>
+                                <span>2021 - 2024</span>
+                            </div>
+                            <p class="text-gray-600">Projetos: APIs REST com Spring Boot e PostgreSQL</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="experiences">
+                            <i class="fas fa-graduation-cap text-blue-500 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold text-gray-800">Bacharelado em Sistemas de Informação</h4>
+                            <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
+                                <span class="font-medium">UNIESP Centro Universitário</span>
+                                <span class="hidden sm:block sm:mx-2">•</span>
+                                <span>2024 - 2026 (cursando)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Meus <span class="gradient-text">Projetos</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-paw text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">API de Gestão de Petshop</h3>
+                        <p class="text-gray-600 mb-4">Desenvolvimento completo com Java 17 e Spring Boot 3, incluindo autenticação JWT e testes unitários.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Java</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Spring Boot</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">JWT</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/bncgabriel/PetshopAPI" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+                                <i class="fas fa-code mr-2"></i> Código
+                            </a>
+                            <a href="#" class="text-green-500 hover:text-green-700 font-medium flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-blue-400 to-green-500 flex items-center justify-center">
+                        <i class="fas fa-truck text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">API de Gestão de Cargas (SmartlogAPI)</h3>
+                        <p class="text-gray-600 mb-4">FastAPI com Python e SQLAlchemy para gestão de dados logísticos, com containerização Docker.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">FastAPI</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">SQLAlchemy</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Docker</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/bncgabriel/SmartLog-API" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+                                <i class="fas fa-code mr-2"></i> Código
+                            </a>
+                            <a href="#" class="text-green-500 hover:text-green-700 font-medium flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Minhas <span class="gradient-text">Certificações</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                
+                <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-scroll text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Scrum Fundamentals Certified (SFC)</h3>
+                    <p class="text-gray-600 text-center mb-4">SCRUMstudy | 2024</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">DevOps & Agile Culture</h3>
+                    <p class="text-gray-600 text-center mb-4">FIAP Nano Courses | 2024</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-vial text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Ambiente de Teste de Software</h3>
+                    <p class="text-gray-600 text-center mb-4">SIN Comunicação | 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="contact" class="py-16 bg-gradient-to-r from-green-50 to-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Entre em <span class="gradient-text">Contato</span></h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 gradient-bg p-8 text-white">
+                            <h3 class="text-2xl font-semibold mb-4">Informações de Contato</h3>
+                            <div class="space-y-4 mb-6">
+                                <div class="flex items-start">
+                                    <i class="fas fa-envelope mt-1 mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium">Email</h4>
+                                        <p>gabrielbenicioo@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-phone mt-1 mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium">Telefone</h4>
+                                        <p>(83) 99662-9399</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium">Localização</h4>
+                                        <p>João Pessoa, Paraíba, Brasil</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="https://linkedin.com/in/gabriel-benicioo" target="_blank" class="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-50 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/bncgabriel" target="_blank" class="w-10 h-10 bg-white text-gray-800 rounded-full flex items-center justify-center hover:bg-gray-100 transition">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8">
+                            <form id="contact-form" class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"></textarea>
+                                </div>
+                                <button type="submit" class="gradient-bg text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition w-full">Enviar Mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold gradient-text">Gabriel Benicio</a>
+                    <p class="text-gray-400 mt-2">Desenvolvedor Backend Java/Python</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-white transition">Início</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition">Sobre</a>
+                    <a href="#experience" class="text-gray-400 hover:text-white transition">Experiência</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition">Projetos</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contato</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Gabriel Benicio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
