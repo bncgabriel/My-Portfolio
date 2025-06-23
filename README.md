@@ -1,27 +1,35 @@
 # Gabriel Benicio | Backend Developer Portfolio
-
-Bem-vindo ao meu portfólio pessoal! Este projeto é um site responsivo e moderno projetado para mostrar minhas habilidades, experiência, projetos e certificações como Desenvolvedor Backend especializado em Java e Python.
+Bem-vindo ao meu portfólio pessoal! Este projeto é um site responsivo e moderno projetado para mostrar minhas habilidades, experiência, projetos e certificações como Desenvolvedor Backend especializado em Java e Python, ainda não está completamente funcional.
 
 Welcome to my personal portfolio! This project is a responsive and modern website designed to showcase my skills, experience, projects, and certifications as a Backend Developer specializing in Java and Python.
 
-## 🌟 Features | Funcionalidades
+> **Nota**: O sistema de mensagens e o BackEnd ainda não foram implementados. Qualquer contato pode ser feito através das redes sociais disponíveis no portfólio.
 
-- **Responsive Design | Design Responsivo**: Otimizado para visualização perfeita em dispositivos desktop, tablet e mobile.
-- **Dynamic Navigation | Navegação Dinâmica**: Rolagem suave e destaque de links ativos para uma melhor experiência do usuário.
-- **Projects Showcase | Exibição de Projetos**: Descrições detalhadas dos projetos, tecnologias utilizadas e links para repositórios ou demos ao vivo.
-- **Contact Form | Formulário de Contato**: Formulário totalmente funcional para enviar mensagens diretamente para mim.
-- **Certifications | Certificações**: Uma seção dedicada para destacar minhas conquistas profissionais.
-- **TailwindCSS Styling | Estilo com TailwindCSS**: Design limpo e moderno impulsionado pelo TailwindCSS.
+> **Note**: The messaging system and BackEnd have not been implemented yet. Any contact can be made through the social networks available in the portfolio.
 
-## 🛠️ Technologies Used | Tecnologias Utilizadas
+## 🌟 Funcionalidades | Features
 
-- **HTML5**: Marcação semântica e acessível para melhor estrutura.
-- **CSS3**: Estilos e animações personalizados para uma interface envolvente.
-- **JavaScript**: Adiciona interatividade e comportamento dinâmico ao site.
-- **TailwindCSS**: Framework CSS orientado a utilitários para estilização rápida e consistente.
-- **Font Awesome**: Ícones para melhorar o apelo visual e a usabilidade.
+## 🌟 Funcionalidades | Features
 
-## 📂 Project Structure | Estrutura do Projeto
+- **Design Responsivo | Responsive Design**: Otimizado para visualização perfeita em dispositivos desktop, tablet e mobile.  
+    Optimized for seamless viewing on desktop, tablet, and mobile devices.
+
+- **Navegação Dinâmica | Dynamic Navigation**: Rolagem suave e destaque de links ativos para uma melhor experiência do usuário.  
+    Smooth scrolling and active link highlighting for a better user experience.
+
+- **Exibição de Projetos | Projects Showcase**: Descrições detalhadas de projetos, tecnologias utilizadas e links para repositórios ou demonstrações ao vivo.  
+    Detailed descriptions of projects, technologies used, and links to repositories or live demos.
+
+- **Formulário de Contato | Contact Form**: Formulário totalmente funcional para enviar mensagens diretamente para mim.  
+    Fully functional form to send messages directly to me.
+
+- **Certificações | Certifications**: Uma seção dedicada para destacar minhas conquistas profissionais.  
+    A dedicated section to highlight my professional achievements.
+
+- **Estilo com TailwindCSS | TailwindCSS Styling**: Design limpo e moderno impulsionado pelo TailwindCSS.  
+    Clean and modern design powered by TailwindCSS.
+
+## 📂 Estrutura do Projeto | Project Structure
 
 ```
 ├── index.html
