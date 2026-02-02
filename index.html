@@ -1,9 +1,8 @@
-<body class="bg-gray-50"></body>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gabriel Benicio | Desenvolvedor Backend</title>
+  <title>Gabriel Benicio | Desenvolvedor Full Stack</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -13,12 +12,21 @@
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold gradient-text">Gabriel Benicio</a>
             <nav class="hidden md:flex space-x-8">
-                <a href="#home" class="nav-link active text-gray-800 font-medium">Início</a>
-                <a href="#about" class="nav-link text-gray-600 hover:text-gray-800 font-medium">Sobre</a>
-                <a href="#experience" class="nav-link text-gray-600 hover:text-gray-800 font-medium">Experiência</a>
-                <a href="#projects" class="nav-link text-gray-600 hover:text-gray-800 font-medium">Projetos</a>
-                <a href="#contact" class="nav-link text-gray-600 hover:text-gray-800 font-medium">Contato</a>
+                <a href="#home" class="nav-link active text-gray-800 font-medium" data-i18n data-pt="Início" data-en="Home">Início</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-gray-800 font-medium" data-i18n data-pt="Sobre" data-en="About">Sobre</a>
+                <a href="#experience" class="nav-link text-gray-600 hover:text-gray-800 font-medium" data-i18n data-pt="Experiência" data-en="Experience">Experiência</a>
+                <a href="#projects" class="nav-link text-gray-600 hover:text-gray-800 font-medium" data-i18n data-pt="Projetos" data-en="Projects">Projetos</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-gray-800 font-medium" data-i18n data-pt="Contato" data-en="Contact">Contato</a>
             </nav>
+            <button class="lang-toggle hidden md:inline-flex items-center justify-center"
+                data-i18n-attr="aria-label" data-pt-attr="Alternar idioma para inglês" data-en-attr="Switch language to Portuguese"
+                aria-label="Alternar idioma para inglês">
+                <span class="lang-toggle__track">
+                    <span class="lang-toggle__thumb">
+                        <span class="lang-toggle__text">PT</span>
+                    </span>
+                </span>
+            </button>
             <button id="mobile-menu-button" class="md:hidden text-gray-700">
                 <i class="fas fa-bars text-xl"></i>
             </button>
@@ -26,11 +34,20 @@
         
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
             <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
-                <a href="#home" class="py-2 text-gray-800 font-medium border-b border-gray-100">Início</a>
-                <a href="#about" class="py-2 text-gray-600 hover:text-gray-800 font-medium border-b border-gray-100">Sobre</a>
-                <a href="#experience" class="py-2 text-gray-600 hover:text-gray-800 font-medium border-b border-gray-100">Experiência</a>
-                <a href="#projects" class="py-2 text-gray-600 hover:text-gray-800 font-medium border-b border-gray-100">Projetos</a>
-                <a href="#contact" class="py-2 text-gray-600 hover:text-gray-800 font-medium">Contato</a>
+                <a href="#home" class="py-2 text-gray-800 font-medium border-b border-gray-100" data-i18n data-pt="Início" data-en="Home">Início</a>
+                <a href="#about" class="py-2 text-gray-600 hover:text-gray-800 font-medium border-b border-gray-100" data-i18n data-pt="Sobre" data-en="About">Sobre</a>
+                <a href="#experience" class="py-2 text-gray-600 hover:text-gray-800 font-medium border-b border-gray-100" data-i18n data-pt="Experiência" data-en="Experience">Experiência</a>
+                <a href="#projects" class="py-2 text-gray-600 hover:text-gray-800 font-medium border-b border-gray-100" data-i18n data-pt="Projetos" data-en="Projects">Projetos</a>
+                <a href="#contact" class="py-2 text-gray-600 hover:text-gray-800 font-medium" data-i18n data-pt="Contato" data-en="Contact">Contato</a>
+                <button class="lang-toggle mt-2 inline-flex items-center justify-center"
+                    data-i18n-attr="aria-label" data-pt-attr="Alternar idioma para inglês" data-en-attr="Switch language to Portuguese"
+                    aria-label="Alternar idioma para inglês">
+                    <span class="lang-toggle__track">
+                        <span class="lang-toggle__thumb">
+                            <span class="lang-toggle__text">PT</span>
+                        </span>
+                    </span>
+                </button>
             </div>
         </div>
     </header>
@@ -39,12 +56,12 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Olá, eu sou <span class="gradient-text">Gabriel Benicio</span></h1>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">Desenvolvedor Backend Java/Python</h2>
-                    <p class="text-gray-600 mb-8 max-w-lg">Especializado em desenvolvimento de APIs REST com Spring Boot e FastAPI, com experiência em PostgreSQL, Docker e metodologias ágeis.</p>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4"><span data-i18n data-pt="Olá, eu sou " data-en="Hi, I'm ">Olá, eu sou </span><span class="gradient-text">Gabriel Benicio</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6" data-i18n data-pt="Desenvolvedor Full Stack" data-en="Full Stack Developer">Desenvolvedor Full Stack</h2>
+                    <p class="text-gray-600 mb-8 max-w-lg" data-i18n data-pt="Foco em Node.js, Next.js e TypeScript, com experiência em sistemas corporativos em produção, pagamentos via Pix, autenticação, segurança e PostgreSQL." data-en="Focused on Node.js, Next.js, and TypeScript, with experience in production corporate systems, Pix payments, authentication, security, and PostgreSQL.">Foco em Node.js, Next.js e TypeScript, com experiência em sistemas corporativos em produção, pagamentos via Pix, autenticação, segurança e PostgreSQL.</p>
                     <div class="flex space-x-4">
-                        <a href="#contact" class="gradient-bg text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">Contate-me</a>
-                        <a href="#projects" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Ver Projetos</a>
+                        <a href="#contact" class="gradient-bg text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition" data-i18n data-pt="Contate-me" data-en="Contact me">Contate-me</a>
+                        <a href="#projects" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition" data-i18n data-pt="Ver Projetos" data-en="View Projects">Ver Projetos</a>
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
@@ -67,7 +84,7 @@
 
     <section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Sobre <span class="gradient-text">Mim</span></h2>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12"><span data-i18n data-pt="Sobre " data-en="About ">Sobre </span><span class="gradient-text" data-i18n data-pt="Mim" data-en="Me">Mim</span></h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
                     <div class="relative">
@@ -79,27 +96,27 @@
                     </div>
                 </div>
                 <div class="md:w-2/3 md:pl-12">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Desenvolvedor Backend Java/Python</h3>
-                    <p class="text-gray-600 mb-6">Sou um desenvolvedor backend apaixonado por criar soluções robustas e escaláveis usando Java e Python. Minha especialização está no desenvolvimento de APIs REST com Spring Boot e FastAPI, com forte conhecimento em bancos de dados PostgreSQL e práticas de DevOps.</p>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4" data-i18n data-pt="Desenvolvedor Full Stack" data-en="Full Stack Developer">Desenvolvedor Full Stack</h3>
+                    <p class="text-gray-600 mb-6" data-i18n data-pt="Atuo com Node.js, Next.js, TypeScript e PostgreSQL em sistemas corporativos em produção. Tenho experiência com autenticação, RBAC, criptografia (LGPD), automação de deploy com Docker e testes automatizados para fluxos críticos." data-en="I work with Node.js, Next.js, TypeScript, and PostgreSQL in production corporate systems. I have experience with authentication, RBAC, encryption (LGPD), Docker-based deploy automation, and automated tests for critical flows.">Atuo com Node.js, Next.js, TypeScript e PostgreSQL em sistemas corporativos em produção. Tenho experiência com autenticação, RBAC, criptografia (LGPD), automação de deploy com Docker e testes automatizados para fluxos críticos.</p>
                     
                     <div class="mb-8">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Informações Pessoais</h4>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4" data-i18n data-pt="Informações Pessoais" data-en="Personal Info">Informações Pessoais</h4>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="flex items-center">
                                 <i class="fas fa-envelope text-green-500 mr-3"></i>
-                                <span class="text-gray-600">gabrielbenicioo@gmail.com</span>
+                                <span class="text-gray-600">bncgabriel.dev@gmail.com</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-phone text-blue-500 mr-3"></i>
-                                <span class="text-gray-600">+55 (83) 99662-9399</span>
+                                <i class="fas fa-link text-blue-500 mr-3"></i>
+                                <span class="text-gray-600">portfolio-gabriel-benicio.vercel.app</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="fas fa-map-marker-alt text-green-500 mr-3"></i>
-                                <span class="text-gray-600">João Pessoa, Paraíba, Brasil</span>
+                                <span class="text-gray-600" data-i18n data-pt="João Pessoa, Paraíba, Brasil" data-en="João Pessoa, Paraíba, Brazil">João Pessoa, Paraíba, Brasil</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="fas fa-globe text-blue-500 mr-3"></i>
-                                <span class="text-gray-600">Disponível para trabalho remoto</span>
+                                <span class="text-gray-600" data-i18n data-pt="Disponível para trabalho remoto" data-en="Available for remote work">Disponível para trabalho remoto</span>
                             </div>
                         </div>
                     </div>
@@ -112,52 +129,88 @@
                             <i class="fab fa-github mr-2"></i> GitHub
                         </a>
 
-                        <a href="assets/docs/CV_Gabriel_Benicio.pdf" download
-                            class="gradient-bg text-white px-6 py-3 rounded-lg font-medium flex items-center hover:opacity-90 transition shadow">
-                            <i class="fas fa-file-download mr-2"></i> Baixar Currículo
+                        <a href="/assets/docs/CV_Gabriel_Benicio.pdf"
+                            class="doc-trigger gradient-bg text-white px-6 py-3 rounded-lg font-medium flex items-center hover:opacity-90 transition shadow">
+                            <i class="fas fa-eye mr-2"></i> <span data-i18n data-pt="Ver Currículo" data-en="View Resume">Ver Currículo</span>
                         </a>
                     </div>
                 </div>
             </div>
 
             <div class="mt-16">
-                <h3 class="text-2xl font-semibold text-center text-gray-800 mb-8">Minhas <span class="gradient-text">Habilidades</span></h3>
+                <h3 class="text-2xl font-semibold text-center text-gray-800 mb-8"><span data-i18n data-pt="Minhas " data-en="My ">Minhas </span><span class="gradient-text" data-i18n data-pt="Habilidades" data-en="Skills">Habilidades</span></h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                     <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
                         <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
-                            <i class="fab fa-java text-white text-xl"></i>
+                            <i class="fab fa-node-js text-white text-xl"></i>
                         </div>
-                        <span class="font-medium text-gray-700">Java</span>
+                        <span class="font-medium text-gray-700">Node.js</span>
                     </div>
                     <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
                         <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
-                            <i class="fas fa-leaf text-white text-xl"></i>
+                            <i class="fas fa-code text-white text-xl"></i>
                         </div>
-                        <span class="font-medium text-gray-700">Spring Boot</span>
+                        <span class="font-medium text-gray-700">TypeScript</span>
                     </div>
                     <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
                         <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
-                            <i class="fab fa-python text-white text-xl"></i>
+                            <i class="fas fa-layer-group text-white text-xl"></i>
                         </div>
-                        <span class="font-medium text-gray-700">Python</span>
+                        <span class="font-medium text-gray-700">Next.js</span>
                     </div>
                     <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
                         <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
-                            <i class="fas fa-bolt text-white text-xl"></i>
-                        </div>
-                        <span class="font-medium text-gray-700">FastAPI</span>
-                    </div>
-                    <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
-                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
                             <i class="fas fa-database text-white text-xl"></i>
                         </div>
                         <span class="font-medium text-gray-700">PostgreSQL</span>
                     </div>
-                    <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
-                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
+                    <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
                             <i class="fab fa-docker text-white text-xl"></i>
                         </div>
                         <span class="font-medium text-gray-700">Docker</span>
+                    </div>
+                    <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fab fa-linux text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">Linux</span>
+                    </div>
+                    <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-lock text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">Auth & RBAC</span>
+                    </div>
+                    <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700" data-i18n data-pt="Criptografia & LGPD" data-en="Encryption & LGPD">Criptografia & LGPD</span>
+                    </div>
+                    <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-project-diagram text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">WebSocket</span>
+                    </div>
+                    <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-terminal text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">Shell Script</span>
+                    </div>
+                    <div class="skill-badge bg-green-50 border border-green-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-code-branch text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700">Git & SSH</span>
+                    </div>
+                    <div class="skill-badge bg-blue-50 border border-blue-100 rounded-lg p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-clipboard-check text-white text-xl"></i>
+                        </div>
+                        <span class="font-medium text-gray-700" data-i18n data-pt="Testes Automatizados" data-en="Automated Tests">Testes Automatizados</span>
                     </div>
                 </div>
             </div>
@@ -166,7 +219,7 @@
 
     <section id="experience" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Minha <span class="gradient-text">Jornada</span></h2>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12"><span data-i18n data-pt="Minha " data-en="My ">Minha </span><span class="gradient-text" data-i18n data-pt="Jornada" data-en="Journey">Jornada</span></h2>
             
             <div class="max-w-3xl mx-auto">
 
@@ -176,57 +229,101 @@
                             <i class="fas fa-laptop-code text-green-500 text-xl"></i>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-xl font-semibold text-gray-800">Estagiário de Infraestrutura e Redes</h3>
+                            <h3 class="text-xl font-semibold text-gray-800" data-i18n data-pt="Estagiário de Engenharia de Software" data-en="Software Engineering Intern">Estagiário de Engenharia de Software</h3>
                             <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
-                                <span class="font-medium">Vox Tecnologia</span>
+                                <span class="font-medium">Companhia Brasileira de Trens Urbanos (CBTU)</span>
                                 <span class="hidden sm:block sm:mx-2">•</span>
-                                <span>Fevereiro 2025 - Presente</span>
+                                <span data-i18n data-pt="Setembro 2025 - Atual" data-en="September 2025 - Present">Setembro 2025 - Atual</span>
                             </div>
                             <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                                <li>Containerização de microsserviços com Docker</li>
-                                <li>Monitoramento de performance de APIs usando ferramentas de log</li>
-                                <li>Automação de deploy em servidores Linux</li>
+                                <li data-i18n data-pt="Responsável técnico por sistema de pagamentos via Pix em produção" data-en="Technical owner of a production Pix payment system">Responsável técnico por sistema de pagamentos via Pix em produção</li>
+                                <li data-i18n data-pt="Conciliação de pagamentos com balanço diário e monitoramento de pendências" data-en="Payment reconciliation with daily balance and pending monitoring">Conciliação de pagamentos com balanço diário e monitoramento de pendências</li>
+                                <li data-i18n data-pt="Idempotência para evitar duplicidade de pagamentos com testes automatizados (HTTP 409)" data-en="Idempotency to prevent duplicate payments with automated tests (HTTP 409)">Idempotência para evitar duplicidade de pagamentos com testes automatizados (HTTP 409)</li>
+                                <li data-i18n data-pt="Autenticação e RBAC no sistema de gratuidades, com auditoria e trilha de alterações" data-en="Authentication and RBAC in the gratuities system, with auditing and change trail">Autenticação e RBAC no sistema de gratuidades, com auditoria e trilha de alterações</li>
+                                <li data-i18n data-pt="Proteção de dados sensíveis com criptografia e práticas alinhadas à LGPD" data-en="Sensitive data protection with encryption and LGPD-aligned practices">Proteção de dados sensíveis com criptografia e práticas alinhadas à LGPD</li>
+                                <li data-i18n data-pt="Automação de deploy com Docker via scripts para ambientes dev e prod" data-en="Docker deploy automation via scripts for dev and prod environments">Automação de deploy com Docker via scripts para ambientes dev e prod</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
+
+                <div class="mb-12">
+                    <div class="flex items-start">
+                        <div class="experiences">
+                            <i class="fas fa-network-wired text-blue-500 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800" data-i18n data-pt="Estagiário de Infraestrutura e Redes" data-en="Infrastructure and Networks Intern">Estagiário de Infraestrutura e Redes</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
+                                <span class="font-medium">Vox Tecnologia</span>
+                                <span class="hidden sm:block sm:mx-2">•</span>
+                                <span data-i18n data-pt="Fevereiro 2025 - Setembro 2025" data-en="February 2025 - September 2025">Fevereiro 2025 - Setembro 2025</span>
+                            </div>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li data-i18n data-pt="Suporte técnico a usuários e equipes de desenvolvimento (remoto e presencial)" data-en="Technical support for users and development teams (remote and on-site)">Suporte técnico a usuários e equipes de desenvolvimento (remoto e presencial)</li>
+                                <li data-i18n data-pt="Administração básica de servidores Linux e rotinas operacionais" data-en="Basic Linux server administration and operational routines">Administração básica de servidores Linux e rotinas operacionais</li>
+                                <li data-i18n data-pt="Automação de tarefas com Shell Script e gerenciamento remoto via SSH" data-en="Task automation with Shell Script and remote management via SSH">Automação de tarefas com Shell Script e gerenciamento remoto via SSH</li>
+                                <li data-i18n data-pt="Operação de máquinas virtuais (VMware) e apoio a ambientes com containers" data-en="Virtual machine operation (VMware) and support for container environments">Operação de máquinas virtuais (VMware) e apoio a ambientes com containers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12">
+                    <div class="flex items-start">
+                        <div class="experiences">
+                            <i class="fas fa-users-cog text-green-500 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800" data-i18n data-pt="Presidente da Comissão de Projetos e Extensão" data-en="President of the Projects and Extension Committee">Presidente da Comissão de Projetos e Extensão</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
+                                <span class="font-medium">LATIM - UNIESP</span>
+                                <span class="hidden sm:block sm:mx-2">•</span>
+                                <span data-i18n data-pt="Janeiro 2025 - Junho 2025" data-en="January 2025 - June 2025">Janeiro 2025 - Junho 2025</span>
+                            </div>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li data-i18n data-pt="Liderança técnica de equipes multidisciplinares em projetos acadêmicos" data-en="Technical leadership of multidisciplinary teams in academic projects">Liderança técnica de equipes multidisciplinares em projetos acadêmicos</li>
+                                <li data-i18n data-pt="Levantamento de requisitos, arquitetura inicial e organização de prazos" data-en="Requirements gathering, initial architecture, and timeline organization">Levantamento de requisitos, arquitetura inicial e organização de prazos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mb-12">
                     <div class="flex items-start">
                         <div class="experiences">
                             <i class="fas fa-database text-blue-500 text-xl"></i>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-xl font-semibold text-gray-800">Monitor de Banco de Dados</h3>
+                            <h3 class="text-xl font-semibold text-gray-800" data-i18n data-pt="Monitor de Banco de Dados" data-en="Database Monitor">Monitor de Banco de Dados</h3>
                             <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
                                 <span class="font-medium">LATIM - UNIESP</span>
                                 <span class="hidden sm:block sm:mx-2">•</span>
-                                <span>Abril 2024 - Dezembro 2024</span>
+                                <span data-i18n data-pt="Abril 2024 - Janeiro 2025" data-en="April 2024 - January 2025">Abril 2024 - Janeiro 2025</span>
                             </div>
                             <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                                <li>Ministrei treinamentos práticos de SQL avançado (CTEs, JOINs complexos)</li>
-                                <li>Otimizei consultas com técnicas de indexação em PostgreSQL</li>
-                                <li>Documentei processos de integração entre bancos e APIs REST</li>
+                                <li data-i18n data-pt="Aulas práticas de SQL e PostgreSQL, normalização e modelagem de dados" data-en="Hands-on SQL and PostgreSQL classes, normalization and data modeling">Aulas práticas de SQL e PostgreSQL, normalização e modelagem de dados</li>
+                                <li data-i18n data-pt="Suporte aos alunos na resolução e validação de consultas e exercícios" data-en="Support for students in solving and validating queries and exercises">Suporte aos alunos na resolução e validação de consultas e exercícios</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 
                 <div>
-                    <h3 class="text-2xl font-semibold text-center text-gray-800 mb-8">Formação <span class="gradient-text">Acadêmica</span></h3>
+                    <h3 class="text-2xl font-semibold text-center text-gray-800 mb-8"><span data-i18n data-pt="Formação " data-en="Academic ">Formação </span><span class="gradient-text" data-i18n data-pt="Acadêmica" data-en="Education">Acadêmica</span></h3>
                     
                     <div class="flex items-start mb-6">
                         <div class="experiences">
                             <i class="fas fa-graduation-cap text-green-500 text-xl"></i>
                         </div>
                         <div class="flex-1">
-                            <h4 class="text-lg font-semibold text-gray-800">Tecnólogo em Sistemas para Internet</h4>
+                            <h4 class="text-lg font-semibold text-gray-800" data-i18n data-pt="Tecnólogo em Sistemas para Internet" data-en="Technologist in Internet Systems">Tecnólogo em Sistemas para Internet</h4>
                             <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
                                 <span class="font-medium">UNIESP Centro Universitário</span>
                                 <span class="hidden sm:block sm:mx-2">•</span>
                                 <span>2021 - 2024</span>
                             </div>
-                            <p class="text-gray-600">Projetos: APIs REST com Spring Boot e PostgreSQL</p>
+                            <p class="text-gray-600" data-i18n data-pt="Projetos: APIs REST com Spring Boot e PostgreSQL" data-en="Projects: REST APIs with Spring Boot and PostgreSQL">Projetos: APIs REST com Spring Boot e PostgreSQL</p>
                         </div>
                     </div>
                     
@@ -235,11 +332,11 @@
                             <i class="fas fa-graduation-cap text-blue-500 text-xl"></i>
                         </div>
                         <div class="flex-1">
-                            <h4 class="text-lg font-semibold text-gray-800">Bacharelado em Sistemas de Informação</h4>
+                            <h4 class="text-lg font-semibold text-gray-800" data-i18n data-pt="Bacharelado em Sistemas de Informação" data-en="B.Sc. in Information Systems">Bacharelado em Sistemas de Informação</h4>
                             <div class="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-2">
                                 <span class="font-medium">UNIESP Centro Universitário</span>
                                 <span class="hidden sm:block sm:mx-2">•</span>
-                                <span>2024 - 2026 (cursando)</span>
+                                <span data-i18n data-pt="2025 - conclusão prevista: Junho/2026" data-en="2025 - expected completion: June/2026">2025 - conclusão prevista: Junho/2026</span>
                             </div>
                         </div>
                     </div>
@@ -250,7 +347,7 @@
 
     <section id="projects" class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Meus <span class="gradient-text">Projetos</span></h2>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12"><span data-i18n data-pt="Meus " data-en="My ">Meus </span><span class="gradient-text" data-i18n data-pt="Projetos" data-en="Projects">Projetos</span></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
@@ -259,8 +356,8 @@
                         <i class="fas fa-paw text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">API de Gestão de Petshop</h3>
-                        <p class="text-gray-600 mb-4">Desenvolvimento completo com Java 17 e Spring Boot 3, incluindo autenticação JWT e testes unitários.</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2" data-i18n data-pt="API de Gestão de Petshop" data-en="Petshop Management API">API de Gestão de Petshop</h3>
+                        <p class="text-gray-600 mb-4" data-i18n data-pt="Desenvolvimento completo com Java 17 e Spring Boot 3, incluindo autenticação JWT e testes unitários." data-en="End-to-end development with Java 17 and Spring Boot 3, including JWT authentication and unit tests.">Desenvolvimento completo com Java 17 e Spring Boot 3, incluindo autenticação JWT e testes unitários.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Java</span>
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Spring Boot</span>
@@ -269,10 +366,10 @@
                         </div>
                         <div class="flex space-x-3">
                             <a href="https://github.com/bncgabriel/PetshopAPI" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
-                                <i class="fas fa-code mr-2"></i> Código
+                                <i class="fas fa-code mr-2"></i> <span data-i18n data-pt="Código" data-en="Code">Código</span>
                             </a>
                             <a href="#" class="text-green-500 hover:text-green-700 font-medium flex items-center">
-                                <i class="fas fa-external-link-alt mr-2"></i> Demo
+                                <i class="fas fa-external-link-alt mr-2"></i> <span data-i18n data-pt="Demo" data-en="Demo">Demo</span>
                             </a>
                         </div>
                     </div>
@@ -283,8 +380,8 @@
                         <i class="fas fa-truck text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">API de Gestão de Cargas (SmartlogAPI)</h3>
-                        <p class="text-gray-600 mb-4">FastAPI com Python e SQLAlchemy para gestão de dados logísticos, com containerização Docker.</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2" data-i18n data-pt="API de Gestão de Cargas (SmartlogAPI)" data-en="Cargo Management API (SmartlogAPI)">API de Gestão de Cargas (SmartlogAPI)</h3>
+                        <p class="text-gray-600 mb-4" data-i18n data-pt="FastAPI com Python e SQLAlchemy para gestão de dados logísticos, com containerização Docker." data-en="FastAPI with Python and SQLAlchemy for logistics data management, with Docker containerization.">FastAPI com Python e SQLAlchemy para gestão de dados logísticos, com containerização Docker.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Python</span>
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">FastAPI</span>
@@ -293,10 +390,10 @@
                         </div>
                         <div class="flex space-x-3">
                             <a href="https://github.com/bncgabriel/SmartLog-API" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
-                                <i class="fas fa-code mr-2"></i> Código
+                                <i class="fas fa-code mr-2"></i> <span data-i18n data-pt="Código" data-en="Code">Código</span>
                             </a>
                             <a href="#" class="text-green-500 hover:text-green-700 font-medium flex items-center">
-                                <i class="fas fa-external-link-alt mr-2"></i> Demo
+                                <i class="fas fa-external-link-alt mr-2"></i> <span data-i18n data-pt="Demo" data-en="Demo">Demo</span>
                             </a>
                         </div>
                     </div>
@@ -307,7 +404,7 @@
 
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Minhas <span class="gradient-text">Certificações</span></h2>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12"><span data-i18n data-pt="Minhas " data-en="My ">Minhas </span><span class="gradient-text" data-i18n data-pt="Certificações" data-en="Certifications">Certificações</span></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                 <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
@@ -315,15 +412,14 @@
                         <i class="fas fa-scroll text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Scrum Fundamentals Certified (SFC)</h3>
-                    <p class="text-gray-600 text-center mb-4">SCRUMstudy | 2024</p>
+                    <p class="text-gray-600 text-center mb-4">VMEdu | 2023</p>
 
-                    <a href="assets/certifications/Scrum_Fundamentals_Certified.pdf" download
-                       class="mt-auto gradient-bg text-white px-4 py-2 rounded-lg font-medium flex items-center justify-center hover:opacity-90 transition shadow">
-                        <i class="fas fa-download mr-2"></i> Baixar Certificado
+                    <a href="assets/certifications/Scrum_Fundamentals_Certified.pdf"
+                       class="doc-trigger mt-auto gradient-bg text-white px-4 py-2 rounded-lg font-medium flex items-center justify-center hover:opacity-90 transition shadow">
+                        <i class="fas fa-eye mr-2"></i> <span data-i18n data-pt="Ver certificado" data-en="View certificate">Ver certificado</span>
                     </a>
-
                 </div>
-                
+
                 <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
                     <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
                         <i class="fas fa-rocket text-white text-2xl"></i>
@@ -331,56 +427,67 @@
                     <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">DevOps & Agile Culture</h3>
                     <p class="text-gray-600 text-center mb-4">FIAP Nano Courses | 2024</p>
 
-                    <a href="assets/certifications/DevOps_Agile_Culture.png" download
-                       class="mt-auto gradient-bg text-white px-4 py-2 rounded-lg font-medium flex items-center justify-center hover:opacity-90 transition shadow">
-                        <i class="fas fa-download mr-2"></i> Baixar Certificado
+                    <a href="assets/certifications/DevOps_Agile_Culture.png"
+                       class="doc-trigger mt-auto gradient-bg text-white px-4 py-2 rounded-lg font-medium flex items-center justify-center hover:opacity-90 transition shadow">
+                        <i class="fas fa-eye mr-2"></i> <span data-i18n data-pt="Ver certificado" data-en="View certificate">Ver certificado</span>
                     </a>
-
                 </div>
-                
+
+                <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-user-check text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">User Experience</h3>
+                    <p class="text-gray-600 text-center mb-4">FIAP Nano Courses | 2024</p>
+
+                    <a href="assets/certifications/User_Experience.png"
+                       class="doc-trigger mt-auto gradient-bg text-white px-4 py-2 rounded-lg font-medium flex items-center justify-center hover:opacity-90 transition shadow">
+                        <i class="fas fa-eye mr-2"></i> <span data-i18n data-pt="Ver certificado" data-en="View certificate">Ver certificado</span>
+                    </a>
+                </div>
+
                 <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
                     <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4 mx-auto">
                         <i class="fas fa-vial text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Ambiente de Teste de Software</h3>
-                    <p class="text-gray-600 text-center mb-4">SIN Comunicação | 2023</p>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2" data-i18n data-pt="Programa de Ambiente de Teste" data-en="Test Environment Program">Programa de Ambiente de Teste</h3>
+                    <p class="text-gray-600 text-center mb-4">SIN Comunicação | 2024</p>
 
-                    <a href="assets/certifications/Ambiente_de_Teste_de_Software.png" download
-                       class="mt-auto gradient-bg text-white px-4 py-2 rounded-lg font-medium flex items-center justify-center hover:opacity-90 transition shadow">
-                        <i class="fas fa-download mr-2"></i> Baixar Certificado
+                    <a href="assets/certifications/Ambiente_de_Teste_de_Software.png"
+                       class="doc-trigger mt-auto gradient-bg text-white px-4 py-2 rounded-lg font-medium flex items-center justify-center hover:opacity-90 transition shadow">
+                        <i class="fas fa-eye mr-2"></i> <span data-i18n data-pt="Ver certificado" data-en="View certificate">Ver certificado</span>
                     </a>
+                </div>
 
-                </div>
-                
                 <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
-                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <i class="fas fa-leaf text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">REST API com Spring Boot</h3>
-                    <p class="text-gray-600 text-center mb-4">Spring | 2025</p>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
-                    <div class="w-16 h-16 bg-green-700 rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <i class="fas fa-leaf text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Spring Professional Learning Path</h3>
-                    <p class="text-gray-600 text-center mb-4">Spring Academy | 2025</p>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
-                    <div class="w-16 h-16 bg-green-800 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-4 mx-auto">
                         <i class="fas fa-leaf text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Spring Framework Essentials</h3>
                     <p class="text-gray-600 text-center mb-4">Spring Academy | 2025</p>
                 </div>
-                
+
                 <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
-                    <div class="w-16 h-16 bg-green-900 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-4 mx-auto">
                         <i class="fas fa-leaf text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Spring Boot</h3>
+                    <p class="text-gray-600 text-center mb-4">Spring Academy | 2025</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+                    <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-leaf text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2" data-i18n data-pt="REST API com Spring Boot" data-en="REST API with Spring Boot">REST API com Spring Boot</h3>
+                    <p class="text-gray-600 text-center mb-4">Spring | 2025</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 border border-gray-100">
+                    <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-leaf text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Spring Professional Learning Path</h3>
                     <p class="text-gray-600 text-center mb-4">Spring Academy | 2025</p>
                 </div>
             </div>
@@ -389,62 +496,37 @@
         
     <section id="contact" class="py-16 bg-gradient-to-r from-green-50 to-blue-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Entre em <span class="gradient-text">Contato</span></h2>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12"><span data-i18n data-pt="Entre em " data-en="Get in ">Entre em </span><span class="gradient-text" data-i18n data-pt="Contato" data-en="Touch">Contato</span></h2>
             
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="flex flex-col md:flex-row">
-                        <div class="md:w-1/2 gradient-bg p-8 text-white">
-                            <h3 class="text-2xl font-semibold mb-4">Informações de Contato</h3>
-                            <div class="space-y-4 mb-6">
-                                <div class="flex items-start">
-                                    <i class="fas fa-envelope mt-1 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-medium">Email</h4>
-                                        <p>gabrielbenicioo@gmail.com</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start">
-                                    <i class="fas fa-phone mt-1 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-medium">Telefone</h4>
-                                        <p>(83) 99662-9399</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start">
-                                    <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-medium">Localização</h4>
-                                        <p>João Pessoa, Paraíba, Brasil</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex space-x-4">
-                                <a href="https://linkedin.com/in/gabriel-benicioo" target="_blank" class="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-50 transition">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://github.com/bncgabriel" target="_blank" class="w-10 h-10 bg-white text-gray-800 rounded-full flex items-center justify-center hover:bg-gray-100 transition">
-                                    <i class="fab fa-github"></i>
-                                </a>
+            <div class="max-w-3xl mx-auto">
+                <div class="gradient-bg rounded-xl shadow-lg p-8 text-white">
+                    <h3 class="text-2xl font-semibold mb-4" data-i18n data-pt="Informações de Contato" data-en="Contact Information">Informações de Contato</h3>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-medium" data-i18n data-pt="Email" data-en="Email">Email</h4>
+                                <p>bncgabriel.dev@gmail.com</p>
                             </div>
                         </div>
-                        <div class="md:w-1/2 p-8">
-                            <form id="contact-form" class="space-y-4">
-                                <div>
-                                    <label for="name" class="block text-gray-700 mb-2">Nome</label>
-                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-gray-700 mb-2">Email</label>
-                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                </div>
-                                <div>
-                                    <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
-                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"></textarea>
-                                </div>
-                                <button type="submit" class="gradient-bg text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition w-full">Enviar Mensagem</button>
-                            </form>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-medium" data-i18n data-pt="Localização" data-en="Location">Localização</h4>
+                                <p data-i18n data-pt="João Pessoa, Paraíba, Brasil" data-en="João Pessoa, Paraíba, Brazil">João Pessoa, Paraíba, Brasil</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/gabriel-benicioo" target="_blank" class="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-50 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/bncgabriel" target="_blank" class="w-10 h-10 bg-white text-gray-800 rounded-full flex items-center justify-center hover:bg-gray-100 transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/5583996629399?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20decidi%20entrar%20em%20contato%2C%20me%20chamo%20%5BSeu%20Nome%5D" target="_blank" class="w-10 h-10 bg-white text-green-600 rounded-full flex items-center justify-center hover:bg-green-50 transition" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -456,18 +538,29 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <a href="#" class="text-2xl font-bold gradient-text">Gabriel Benicio</a>
-                    <p class="text-gray-400 mt-2">Desenvolvedor Backend Java/Python</p>
+                    <p class="text-gray-400 mt-2" data-i18n data-pt="Desenvolvedor Full Stack" data-en="Full Stack Developer">Desenvolvedor Full Stack</p>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#home" class="text-gray-400 hover:text-white transition">Início</a>
-                    <a href="#about" class="text-gray-400 hover:text-white transition">Sobre</a>
-                    <a href="#experience" class="text-gray-400 hover:text-white transition">Experiência</a>
-                    <a href="#projects" class="text-gray-400 hover:text-white transition">Projetos</a>
-                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contato</a>
+                    <a href="#home" class="text-gray-400 hover:text-white transition" data-i18n data-pt="Início" data-en="Home">Início</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition" data-i18n data-pt="Sobre" data-en="About">Sobre</a>
+                    <a href="#experience" class="text-gray-400 hover:text-white transition" data-i18n data-pt="Experiência" data-en="Experience">Experiência</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition" data-i18n data-pt="Projetos" data-en="Projects">Projetos</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition" data-i18n data-pt="Contato" data-en="Contact">Contato</a>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Gabriel Benicio. Todos os direitos reservados.</p>
+                <p data-i18n data-pt="© 2026 Gabriel Benicio. Todos os direitos reservados." data-en="© 2026 Gabriel Benicio. All rights reserved.">© 2026 Gabriel Benicio. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
+
+    <div id="doc-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+        <button id="doc-close-right" class="absolute right-4 top-4 rounded-full bg-white/70 px-3 py-2 text-gray-800 shadow-lg backdrop-blur-md hover:bg-white" data-i18n-attr="aria-label" data-pt-attr="Fechar visualização" data-en-attr="Close preview" aria-label="Fechar visualização">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="w-full max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl">
+            <div id="doc-modal-content" class="flex h-[80vh] w-full items-center justify-center bg-white"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
